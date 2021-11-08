@@ -6,19 +6,26 @@ Go to [BlackBoard Assignment](https://mymasonportal.gmu.edu/ultra/courses/_43273
 ### Purpose
 The purpose of assignment 3 is to help students (1) understand the techniques to aggregate geospatial points to polygons and (2) be able to publish geo-social data through the web. 
 
-Follow these steps:
+#### Notes to Self:
+I did this all in QGIS. You need to make sure all the files are on the same layer; use the menu Layer -> Add w/e or you might end up regretting it. :)
 
-For the Fairfax County (Virginia), collect 200 records of geo-social point data from any websites or APIs. For example, it could be geo-tagged Twitter, Yelp, Meetup, crime open data, Census data, or any other types of data. The data should be point data with longitude & latitude values. Save it as "assignment3.csv". 
+To add the counts, you can just use either the Processing Toolbox option "Vector Analysis -> Count Points in Polygon" or the menu option "Vector -> Data Management Tools -> Join Attributes by Location". If you use the latter option, you need to make sure you put the polygons on the base (top) and the points below it.
 
-Under the "reference_data" folder of our course Git repository, you can find "Fairfax_ZIP_Codes.geojson" file. This data is polygon data of ZIP code boundaries in Fairfax, VA (downloaded from Fairfax Open Data Portal).  
+Make sure your data (looking at you, CSV file) are using the same geo encoding standard.
 
-Use any of R, Python, QGIS, or ArcGIS (or whatever tool that you're familliar with) to aggregate the number of points from "assginment3.csv" to the ZIP code polygons (e.g., if 10 points from your point data fall into a ZIP code polygon on the map, the polygon ID has 10 for the count of the points). Save the result as "aggregation.geojson" -- this should be basically a polygon layer where the number of data points per each polygon is one of the polygon's attributes.
+### Follow these steps:
 
-Load both the "assignment3.csv" and "aggregation.geojson" on QGIS (or any other tools) along with the base map, so the map visualization shows both polygons and points on top of the base map. I recommend to use QGIS for the visualization, because it is easier to export layers as web-based files. 
+DONE: For Fairfax County (Virginia), collect 200 records of geo-social point data from any websites or APIs. For example, it could be geo-tagged Twitter, Yelp, Meetup, crime open data, Census data, or any other types of data. The data should be point data with longitude & latitude values. Save it as "assignment3.csv". 
 
-Color code the ZIP code polygons based on the number of points -- the color coding should be based on gradiation of color where darker colors indicates a higher number of points in the polygon. 
+DONE: Under the "reference_data" folder of our course Git repository, you can find "Fairfax_ZIP_Codes.geojson" file. This data is polygon data of ZIP code boundaries in Fairfax, VA (downloaded from Fairfax Open Data Portal).  
 
-Export the online map that you made as JavaScript-embedded HTML files (either Leaflet or OpenLayer-based). The exported files will be stored as a folder (with many files in it, including the 'index.html' file). 
+DONE: Use any of R, Python, QGIS, or ArcGIS (or whatever tool that you're familliar with) to aggregate the number of points from "assignment3.csv" to the ZIP code polygons (e.g., if 10 points from your point data fall into a ZIP code polygon on the map, the polygon ID has 10 for the count of the points). Save the result as "aggregation.geojson" -- this should be basically a polygon layer where the number of data points per each polygon is one of the polygon's attributes.
+
+DONE: Load both the "assignment3.csv" and "aggregation.geojson" on QGIS (or any other tools) along with the base map, so the map visualization shows both polygons and points on top of the base map. I recommend to use QGIS for the visualization, because it is easier to export layers as web-based files. 
+
+DONE: Color code the ZIP code polygons based on the number of points -- the color coding should be based on gradiation of color where darker colors indicates a higher number of points in the polygon. 
+
+Export the online map that you made as JavaScript-embedded HTML files (either Leaflet or OpenLayer-based). The exported files will be stored as a folder (with many files in it, including the 'index.html' file). (INSTALL QGIS2WEB Plugin through QGIS Plugins menu.) 
 
 Create a 1-page report (strict on the number of pages to 1 page) that briefly explains the meanings of the data visualization and the color-coding. 
 __Compress__ (1) the folder that includes web-based map visulaization files, (2) assignment3.csv, (3) aggregation.geojson, (4) data aggregation code or App file, and (5) your 1-page report, and submit the compressed file (e.g., ZIP) to BlackBoard.
