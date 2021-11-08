@@ -25,7 +25,7 @@ DONE: Load both the "assignment3.csv" and "aggregation.geojson" on QGIS (or any 
 
 DONE: Color code the ZIP code polygons based on the number of points -- the color coding should be based on gradiation of color where darker colors indicates a higher number of points in the polygon. 
 
-Export the online map that you made as JavaScript-embedded HTML files (either Leaflet or OpenLayer-based). The exported files will be stored as a folder (with many files in it, including the 'index.html' file). (INSTALL QGIS2WEB Plugin through QGIS Plugins menu.) 
+DONE: Export the online map that you made as JavaScript-embedded HTML files (either Leaflet or OpenLayer-based). The exported files will be stored as a folder (with many files in it, including the 'index.html' file). (INSTALL QGIS2WEB Plugin through QGIS Plugins menu.) 
 
 Create a 1-page report (strict on the number of pages to 1 page) that briefly explains the meanings of the data visualization and the color-coding. 
 __Compress__ (1) the folder that includes web-based map visulaization files, (2) assignment3.csv, (3) aggregation.geojson, (4) data aggregation code or App file, and (5) your 1-page report, and submit the compressed file (e.g., ZIP) to BlackBoard.
@@ -47,7 +47,8 @@ __Compress__ (1) the folder that includes web-based map visulaization files, (2)
 * Whether the color-coding was done reasonably on the web (10)
 * Whether the one-page report provides a reasonable explanation about the visualization (20)
 * If the number of report pages is more than one page, the points will be deducted (-5). 
-* This is an individual assignment, so you have to do the assignment by yourself. You can discuss general ideas with colleagues but cannot share scripts or assignment details with others. Plagiarism will be strictly enforced (the points will be 0 if there is any plagiarism). 
+
+This is an individual assignment, so you have to do the assignment by yourself. You can discuss general ideas with colleagues but cannot share scripts or assignment details with others. Plagiarism will be strictly enforced (the points will be 0 if there is any plagiarism). 
 
 If you have any questions, send an email to Myeong at mlee89@gmu.edu. 
 
